@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49aec2c3a8446579b609b9308f768e2, type: 3}
+  m_Name: '[Weapon] arme 1'
+  m_EditorClassIdentifier: 
+  <EquipmentName>k__BackingField: 
+  <EquipmentDescription>k__BackingField: 
+  <EnumRarity>k__BackingField: 0
+  <AnimatorController>k__BackingField: {fileID: 9100000, guid: 0c30176b22173594eba7f7fe5f874ab8, type: 2}
+  <Sprite>k__BackingField: {fileID: 0}
+  <SerializableStatsAffect>k__BackingField:
+    stats: []
+  <NumberOfAttacks>k__BackingField: 2
+  <ComponentDataList>k__BackingField:
+  - rid: 7055352334178844680
+  - rid: 7055352370120884224
+  - rid: 7055352383748702209
+  references:
+    version: 2
+    RefIds:
+    - rid: 7055352334178844680
+      type: {class: WeaponActionHitBoxData, ns: Pethalyse.Gameplay.Equipments.Weapons.Components.ComponentData, asm: Assembly-CSharp}
+      data:
+        n: WeaponActionHitBoxData
+        attackData:
+        - name: Attack 1
+          <HitBox>k__BackingField:
+            serializedVersion: 2
+            x: 0.12
+            y: -0.5
+            width: 1.5
+            height: 1
+          <DetectableLayers>k__BackingField:
+            serializedVersion: 2
+            m_Bits: 0
+          debug: 1
+        - name: Attack 2
+          <HitBox>k__BackingField:
+            serializedVersion: 2
+            x: 0
+            y: 0
+            width: 0
+            height: 0
+          <DetectableLayers>k__BackingField:
+            serializedVersion: 2
+            m_Bits: 0
+          debug: 0
+    - rid: 7055352370120884224
+      type: {class: WeaponAttackDamageData, ns: Pethalyse.Gameplay.Equipments.Weapons.Components.ComponentData, asm: Assembly-CSharp}
+      data:
+        n: WeaponAttackDamageData
+        attackData:
+        - name: Attack 1
+          <Inactive>k__BackingField: 0
+          <ValueType>k__BackingField: 0
+          <Percent>k__BackingField: 150
+          <IsBrutDamage>k__BackingField: 0
+        - name: Attack 2
+          <Inactive>k__BackingField: 1
+          <ValueType>k__BackingField: 0
+          <Percent>k__BackingField: 0
+          <IsBrutDamage>k__BackingField: 0
+    - rid: 7055352383748702209
+      type: {class: WeaponAttackHealData, ns: Pethalyse.Gameplay.Equipments.Weapons.Components.ComponentData, asm: Assembly-CSharp}
+      data:
+        n: WeaponAttackHealData
+        attackData:
+        - name: Attack 1
+          <Inactive>k__BackingField: 1
+          <ValueType>k__BackingField: 0
+          <Percent>k__BackingField: 0
+        - name: Attack 2
+          <Inactive>k__BackingField: 0
+          <ValueType>k__BackingField: 1
+          <Percent>k__BackingField: 10
